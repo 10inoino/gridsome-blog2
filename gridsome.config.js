@@ -1,10 +1,10 @@
 module.exports = {
-  siteName: "Cooooool Site!!!!",
+  siteName: "Inomata's Blog",
   plugins: [
     {
       use: "@gridsome/source-wordpress",
       options: {
-        baseUrl: "http://inoblog.wp.xdomain.jp/", // required
+        baseUrl: process.env.WORDPRESS_URL,
         typeName: "blog",
         apiBase: 'wp-json',
         perPage: 10,
