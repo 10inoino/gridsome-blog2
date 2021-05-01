@@ -14,6 +14,7 @@ query BlogPost($path: String){
      id
      title
      content
+     path
   }
 }
 </page-query>
