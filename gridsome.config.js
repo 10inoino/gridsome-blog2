@@ -1,21 +1,18 @@
-// This is where project configuration and plugin options are located.
-// Learn more: https://gridsome.org/docs/config
-
-// Changes here require a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
-
 module.exports = {
   siteName: "Cooooool Site!!!!",
   plugins: [
     {
-      use: '@gridsome/source-filesystem',
+      use: "@gridsome/source-wordpress",
       options: {
-        typeName: 'Post',
-        path: './blog/**/*.md',
-      }
-    }
+        baseUrl: "http://inoblog.wp.xdomain.jp/", // required
+        typeName: "blog",
+        apiBase: 'wp-json',
+        perPage: 10,
+        concurrent: 1,
+      },
+    },
   ],
   templates: {
-    Post: '/blog/:id'
+    BlogPost: "/:year/:month/:day/:slug",
   }
 };

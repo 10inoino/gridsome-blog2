@@ -8,12 +8,13 @@
 
 <page-query>
 query {
-  posts: allPost {
+  posts: allBlogPost {
     edges {
       node {
         id
         title
         path
+        slug
       }
     }
   }
