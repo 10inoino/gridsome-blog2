@@ -3,10 +3,10 @@
 
 import Vue from 'vue'
 import {BootstrapVue, IconsPlugin} from 'bootstrap-vue'
-Vue.use(BootstrapVue) //追加
-Vue.use(IconsPlugin) //追加
-import 'bootstrap/dist/css/bootstrap.css' // add
-import 'bootstrap-vue/dist/bootstrap-vue.css' // add
+Vue.use(BootstrapVue)
+Vue.use(IconsPlugin)
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 Vue.config.productionTip = false
 import DefaultLayout from '~/layouts/Default.vue'
 

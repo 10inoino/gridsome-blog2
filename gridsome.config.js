@@ -1,5 +1,5 @@
 module.exports = {
-  siteName: "Inomata's Blog",
+  siteName: "MattyLogs",
   plugins: [
     {
       use: "@gridsome/source-wordpress",
@@ -14,5 +14,13 @@ module.exports = {
   ],
   templates: {
     BlogPost: "/:year/:month/:day/:slug",
+  },
+  icon: {
+    favicon: "./src/assets/images/nigaoe.png",
+    touchicon: {
+      src: "./src/assets/images/nigaoe.png",
+      sizes: [76, 152, 120, 167],
+      precomposed: true,
+    },
   }
 };

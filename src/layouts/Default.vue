@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <b-navbar toggleable="lg" type="dark" variant="info">
-      <g-link class="navbar-brand" to="/">Inomata's Blog</g-link>
+      <g-link class="navbar-brand" to="/">MattyLogs</g-link>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
@@ -9,7 +9,30 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <slot/>
+    <b-container fluid class="px-4">
+      <b-row>
+        <b-col cols="10">
+          <slot/>
+        </b-col>
+        <b-col cols="2">
+          <b-card class="m-2">
+            <div class="mb-3 avatar">
+              <g-image src="~/assets/images/nigaoe.png" width="100"/>
+              <div>
+                <h4 id="author-name" class="py-2">matty</h4>
+              </div>
+            </div>
+            <b-card-text>
+              mattyといいます。Webエンジニアをやっています。CivicTechとかに興味があったりします。
+            </b-card-text>
+            <div class="sns-icons mt-3">
+              <a href="https://www.facebook.com/10inoino" target="_blank" class="mx-2"><b-icon-facebook class="h1" color="#3b5998"></b-icon-facebook></a>
+              <a href="https://github.com/10inoino" target="_blank" class="mx-2"><b-icon-github class="h1" color="#000000"></b-icon-github></a>
+            </div>
+          </b-card>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
@@ -31,5 +54,15 @@ body {
 
 .nav_link {
   color: white;
+}
+
+div.avatar,div.sns-icons{
+  text-align: center
+}
+
+#author-name {
+  /*線の種類（二重線）太さ 色*/
+  border-bottom: double 5px #FFC778;
+  display: inline-block;
 }
 </style>

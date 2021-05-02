@@ -1,21 +1,28 @@
 <template>
   <Layout>
-    <div>
-      <b-container>
-        <b-row>
-          <b-col cols="12" class="p-3 article" v-for="edge in $page.posts.edges" :key="edge.node.id">
-            <router-link :to="{ path: edge.node.path}" append>
-              <h4 class="mb-2 title">{{edge.node.title}}</h4>
-              <div>
-                <article v-html="edge.node.excerpt" />
-              </div>
-            </router-link>
-          </b-col>
-        </b-row>
-      </b-container>
-    </div>
+    <b-row id="article-list">
+      <b-col cols="12" class="p-3 article" v-for="edge in $page.posts.edges" :key="edge.node.id">
+        <router-link :to="{ path: edge.node.path}" append>
+          <div><b-icon-calendar class="mr-2"></b-icon-calendar>{{reduceDate(edge.node.date)}}</div>
+          <h3 class="mb-2 title">{{edge.node.title}}</h3>
+          <div>
+            <article v-html="edge.node.excerpt" />
+          </div>
+        </router-link>
+      </b-col>
+    </b-row>
   </Layout>
 </template>
+
+<script>
+export default {
+  methods: {
+    reduceDate(date) {
+      return date.substr(0, 10);
+    },
+  }
+}
+</script>
 
 <page-query>
 query {
@@ -48,5 +55,9 @@ h4.title {
 
 article {
   color: grey;
+}
+
+* {
+  color:black
 }
 </style>
