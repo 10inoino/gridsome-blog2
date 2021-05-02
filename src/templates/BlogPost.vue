@@ -34,12 +34,12 @@ query BlogPost($path: String){
 
 <style scoped>
 #back2home {
-  font-size: 20px;
+  font-size: 1rem;
   color: black;
 }
 
 #title {
-  font-size: 70px;
+  font-size: 4rem;
   position: relative;
   border-bottom: 10px solid #ccc;
 }

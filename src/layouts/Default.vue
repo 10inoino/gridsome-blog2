@@ -11,10 +11,10 @@
     </b-navbar>
     <b-container fluid class="px-4">
       <b-row>
-        <b-col cols="10">
+        <b-col md="10">
           <slot/>
         </b-col>
-        <b-col cols="2">
+        <b-col md="2">
           <b-card class="m-2">
             <div class="mb-3 avatar">
               <g-image src="~/assets/images/nigaoe.png" width="100"/>
