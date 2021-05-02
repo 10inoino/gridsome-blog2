@@ -55,6 +55,7 @@ h4.title {
 
 article {
   color: grey;
+  word-break: break-all;
 }
 
 * {

@@ -1,12 +1,12 @@
 <template>
   <Layout>
     <b-container>
-      <h1 id="title">{{ $page.blogPost.title }}</h1>
-      <div class="mb-3 article-date"><b-icon-calendar class="mr-2"></b-icon-calendar>{{reduceDate($page.blogPost.date)}}</div>
-      <b-media>
+      <div>
+        <h1 id="title">{{ $page.blogPost.title }}</h1>
+        <div class="mb-3 article-date"><b-icon-calendar class="mr-2"></b-icon-calendar>{{reduceDate($page.blogPost.date)}}</div>
         <article class="article-body" v-html="$page.blogPost.content" />
-      </b-media>
-      <g-link id='back2home' to="/"><b-icon-chevron-double-left/>トップに戻る</g-link>
+        <g-link id='back2home' to="/"><b-icon-chevron-double-left/>トップに戻る</g-link>
+      </div>
     </b-container>
   </Layout>
 </template>
