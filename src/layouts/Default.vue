@@ -11,13 +11,13 @@
     </b-navbar>
     <b-container fluid class="px-4">
       <b-row>
-        <b-col md="10">
+        <b-col lg="10">
           <slot/>
         </b-col>
-        <b-col md="2">
+        <b-col lg="2">
           <b-card class="m-2">
             <div class="mb-3 avatar">
-              <g-image src="~/assets/images/nigaoe.png" width="100"/>
+              <g-image src="~/assets/images/nigaoe.png" width="80%"/>
               <div>
                 <h4 id="author-name" class="py-2">matty</h4>
               </div>
