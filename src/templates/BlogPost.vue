@@ -2,7 +2,7 @@
   <Layout>
     <b-container>
       <div>
-        <h1 id="title">{{ $page.blogPost.title }}</h1>
+        <h2 id="title">{{ $page.blogPost.title }}</h2>
         <div class="mb-3 article-date"><b-icon-calendar class="mr-2"></b-icon-calendar>{{reduceDate($page.blogPost.date)}}</div>
         <article class="article-body" v-html="$page.blogPost.content" />
         <g-link id='back2home' to="/"><b-icon-chevron-double-left/>トップに戻る</g-link>
@@ -17,7 +17,12 @@ export default {
     reduceDate(date) {
       return date.substr(0, 10);
     },
-  }
+  },
+  mounted () {
+    this.$nextTick(() => {
+      PR.prettyPrint();
+    })
+  },
 }
 </script>
 
@@ -81,4 +86,7 @@ article {
 .article-body >>> h3 {
   border-bottom: solid 3px #3498db;
 }
+
+@import '../thirdparty/google-code-prettify/prettify.css';
+@import '../thirdparty/google-code-prettify/skins/sons-of-obsidian.css';
 </style>
