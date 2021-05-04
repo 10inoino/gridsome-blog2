@@ -26,7 +26,7 @@ export default {
 
 <page-query>
 query {
-  posts: allBlogPost {
+  posts: allPost {
     edges {
       node {
         id

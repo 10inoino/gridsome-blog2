@@ -8,8 +8,9 @@ Vue.use(IconsPlugin)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 Vue.config.productionTip = false
-import '~/thirdparty/google-code-prettify/prettify';
 import DefaultLayout from '~/layouts/Default.vue'
+import 'prismjs/themes/prism-okaidia.css'
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component

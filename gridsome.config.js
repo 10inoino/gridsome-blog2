@@ -2,18 +2,24 @@ module.exports = {
   siteName: "MattyLogs",
   plugins: [
     {
-      use: "@gridsome/source-wordpress",
+      use: '@gridsome/source-filesystem',
       options: {
-        baseUrl: process.env.WORDPRESS_URL,
-        typeName: "blog",
-        apiBase: 'wp-json',
-        perPage: 10,
-        concurrent: 1,
-      },
-    },
+        typeName: 'Post',
+        path: './blog/**/*.md',
+        remark: {
+          plugins: [
+            [
+              '@gridsome/remark-prismjs',{
+                showLineNumbers: true
+              }
+            ]
+          ]
+        }
+      }
+    }
   ],
   templates: {
-    BlogPost: "/:year/:month/:day/:slug",
+    Post: '/blog/:id',
   },
   icon: {
     favicon: "./src/assets/images/nigaoe.png",
