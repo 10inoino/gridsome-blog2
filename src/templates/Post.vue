@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class='my-4'>
-      <h2 id="title">{{ $page.post.title }}</h2>
+      <h1 id="MAIN_START">{{ $page.post.title }}</h1>
       <div class="mb-3 article-date"><b-icon-calendar class="mr-2"></b-icon-calendar>{{reduceDate($page.post.date)}}</div>
       <article class="article-body" v-html="$page.post.content" />
       <g-link id='back2home' to="/"><b-icon-chevron-double-left/>home</g-link>
@@ -43,11 +43,12 @@ query blogPost($id: ID!){
   text-decoration: underline;
 }
 
-#title {
+#MAIN_START {
   position: relative;
   border-bottom: 10px solid #ccc;
+  font-size: 2rem;
 }
-#title::after {
+#MAIN_START::after {
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -82,7 +83,7 @@ article {
   padding: 0.25em 0.4em;/*上下 左右の余白*/
   color: #494949;/*文字色*/
   background: transparent;/*背景透明に*/
-  border-left: solid 7px #3498db;/*左線*/
+  border-left: solid 5px #3498db;/*左線*/
   margin: 0.7em 0;
 }
 
@@ -92,5 +93,9 @@ article {
 
 .article-body >>> img {
   max-width: 100%;
+}
+
+.article-body >>> iframe {
+  margin: 0 0 1em 0
 }
 </style>

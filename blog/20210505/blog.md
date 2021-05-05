@@ -7,26 +7,47 @@ blog_id: 2
 ---
 # Gridsomeでブログ作ったよ
 
-GridsomeというVue.jsの静的サイトジェネレータがありまして、そいつを使ってこのブログを作ったわけです。  
-https://qiita.com/Kodak_tmo/items/6967918b53593da5b745
+GridsomeというVue.jsの静的サイトジェネレータがありまして、そいつを使ってこのブログを作ったわけです。
+<iframe 
+  class="hatenablogcard" 
+  style="width:100%;height:155px;max-width:680px;" 
+  src="https://hatenablog-parts.com/embed?url=https://qiita.com/Kodak_tmo/items/6967918b53593da5b745" 
+  width="300" height="150" frameborder="0" scrolling="no">
+</iframe>  
 
 Gridsomeはデータソースに対してGraphQLでアクセスできる優れものでございまして、こんなブログとかを作るのであれば、割とサクッとできちゃう感じです。  
-私はこの記事を見ながらやったので、やりたい人いたら参考にしてみてください。  
-https://www.keisuke69.net/entry/2020/06/09/112907
-
+私はこの記事を見ながらやったので、やりたい人いたら参考にしてみてください。
+<iframe 
+  class="hatenablogcard" 
+  style="width:100%;height:155px;max-width:680px;" 
+  src="https://hatenablog-parts.com/embed?url=https://www.keisuke69.net/entry/2020/06/09/112907" 
+  width="300" height="150" frameborder="0" scrolling="no">
+</iframe>
 
 Gridsomeでブログを作る場合、記事をどこに書くかという選択肢が2つあります。
 
 まず1つ目は**ローカルにMarkdownでブログを書き、それをブログとして公開する方法。**
 
 このsource-filesystemっていうプラグインを使えば実装できます。  
-これをラップしたプラグインもあるみたいですね。  
-https://gridsome.org/plugins/@gridsome/source-filesystem
+これをラップしたプラグインもあるみたいですね。
+
+<iframe 
+  class="hatenablogcard" 
+  style="width:100%;height:155px;max-width:680px;" 
+  src="https://hatenablog-parts.com/embed?url=https://gridsome.org/plugins/@gridsome/source-filesystem" 
+  width="300" height="150" frameborder="0" scrolling="no">
+</iframe>  
 
 そしてもう一つが**CMSを利用する方法**
 
-例えばWordpressのRESTAPIをデータソースにするプラグインとかがあります。  
-https://gridsome.org/plugins/@gridsome/source-wordpress
+例えばWordpressのRESTAPIをデータソースにするプラグインとかがあります。
+
+<iframe 
+  class="hatenablogcard" 
+  style="width:100%;height:155px;max-width:680px;" 
+  src="https://hatenablog-parts.com/embed?url=https://gridsome.org/plugins/@gridsome/source-wordpress" 
+  width="300" height="150" frameborder="0" scrolling="no">
+</iframe>  
 
 これの他にNetlifyCMSをデータソースにするプラグインもありました。
 
