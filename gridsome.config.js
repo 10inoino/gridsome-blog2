@@ -16,6 +16,12 @@ module.exports = {
           ]
         }
       }
+    },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-196355869-2'
+      }
     }
   ],
   templates: {
