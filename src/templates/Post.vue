@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class='m-4'>
+    <div class='my-4'>
       <h2 id="title">{{ $page.post.title }}</h2>
       <div class="mb-3 article-date"><b-icon-calendar class="mr-2"></b-icon-calendar>{{reduceDate($page.post.date)}}</div>
       <article class="article-body" v-html="$page.post.content" />
