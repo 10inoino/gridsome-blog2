@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <b-container>
+    <b-container fluid>
       <h1 class="article-title my-3">About Me</h1>
       <p>matty改め、猪股 光です。</p>
       <p>社会人、Webエンジニア歴共に3年目のぺーぺーです。</p>

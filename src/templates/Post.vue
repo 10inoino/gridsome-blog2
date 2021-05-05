@@ -1,13 +1,11 @@
 <template>
   <Layout>
-    <b-container>
-      <div class='m-4'>
-        <h2 id="title">{{ $page.post.title }}</h2>
-        <div class="mb-3 article-date"><b-icon-calendar class="mr-2"></b-icon-calendar>{{reduceDate($page.post.date)}}</div>
-        <article class="article-body" v-html="$page.post.content" />
-        <g-link id='back2home' to="/"><b-icon-chevron-double-left/>home</g-link>
-      </div>
-    </b-container>
+    <div class='m-4'>
+      <h2 id="title">{{ $page.post.title }}</h2>
+      <div class="mb-3 article-date"><b-icon-calendar class="mr-2"></b-icon-calendar>{{reduceDate($page.post.date)}}</div>
+      <article class="article-body" v-html="$page.post.content" />
+      <g-link id='back2home' to="/"><b-icon-chevron-double-left/>home</g-link>
+    </div>
   </Layout>
 </template>
 
@@ -41,8 +39,8 @@ query blogPost($id: ID!){
 }
 
 #back2home:hover {
-    color: #0056b3;
-    text-decoration: underline;
+  color: #0056b3;
+  text-decoration: underline;
 }
 
 #title {
@@ -65,7 +63,7 @@ article {
 }
 
 .article-date {
-  font-size: 20px;
+  font-size: 1.2rem;
   color: #494949;
 }
 

@@ -65,4 +65,8 @@ div.avatar,div.sns-icons{
   border-bottom: double 5px #FFC778;
   display: inline-block;
 }
+
+* {
+  font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
 </style>

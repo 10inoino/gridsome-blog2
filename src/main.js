@@ -13,6 +13,10 @@ import 'prismjs/themes/prism-okaidia.css'
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 
 export default function (Vue, { router, head, isClient }) {
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css2?family=Roboto'
+  }),
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
 }
