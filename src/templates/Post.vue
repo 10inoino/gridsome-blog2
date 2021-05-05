@@ -76,6 +76,7 @@ article {
   border-left: solid 5px #7db4e6;/*左線*/
   border-bottom: solid 3px #d7d7d7;/*下線*/
   margin: 0.7em 0;
+  font-weight: bold;
 }
 
 .article-body >>> h2 {
@@ -85,6 +86,7 @@ article {
   background: transparent;/*背景透明に*/
   border-left: solid 5px #3498db;/*左線*/
   margin: 0.7em 0;
+  font-weight: bold;
 }
 
 .article-body >>> h3 {
