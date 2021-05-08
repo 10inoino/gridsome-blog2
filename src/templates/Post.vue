@@ -9,16 +9,6 @@
   </Layout>
 </template>
 
-<script>
-export default {
-  methods: {
-    reduceDate(date) {
-      return date.substr(0, 10);
-    },
-  },
-}
-</script>
-
 <page-query>
 query blogPost($id: ID!){
   post(id:$id) {
@@ -27,8 +17,47 @@ query blogPost($id: ID!){
     content
     date
   }
+  metadata {
+    siteName
+    siteUrl
+  }
 }
 </page-query>
+
+<script>
+export default {
+  methods: {
+    reduceDate(date) {
+      return date.substr(0, 10);
+    },
+  },
+  metaInfo() {
+    return {
+      title: this.$page.post.title,
+      link: [
+        {
+          key: `canonical`,
+          rel: `canonical`,
+          href: this.$page.metadata.siteUrl + this.$page.post.path,
+        },
+      ],
+      meta: [
+        { key: `og:type`, property: `og:type`, content: `article` },
+        {
+          key: `og:url`,
+          property: `og:url`,
+          content: this.$page.metadata.siteUrl + this.$page.post.path,
+        },
+        {
+          key: `og:title`,
+          property: `og:title`,
+          content: `${this.$page.post.title} | ${this.$page.metadata.siteName}`,
+        },
+      ]
+    }
+  }
+}
+</script>
 
 <style scoped>
 #back2home {

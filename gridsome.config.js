@@ -1,5 +1,11 @@
 module.exports = {
   siteName: "MattyLogs",
+  titleTemplate: `%s | MattyLogs`,
+  siteUrl: `https://mattylogs.com/`,
+  siteDescription: `MattyがLogを書き残す場所`,
+  metadata: {
+    siteOgImage: `./src/assets/images/nigaoe.png`,
+  },
   plugins: [
     {
       use: '@gridsome/source-filesystem',

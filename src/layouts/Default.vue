@@ -26,6 +26,7 @@
               mattyといいます。Webエンジニアをやっています。CivicTechとかに興味があったりします。
             </b-card-text>
             <div class="sns-icons mt-3">
+              <a href="https://twitter.com/ino_aka_matty" target="_blank" class="mx-2"><b-icon-twitter class="h1" color="#00acee"></b-icon-twitter></a>
               <a href="https://www.facebook.com/10inoino" target="_blank" class="mx-2"><b-icon-facebook class="h1" color="#3b5998"></b-icon-facebook></a>
               <a href="https://github.com/10inoino" target="_blank" class="mx-2"><b-icon-github class="h1" color="#000000"></b-icon-github></a>
             </div>
@@ -40,9 +41,47 @@
 query {
   metadata {
     siteName
+    siteDescription
+    siteUrl
+    siteOgImage
   }
 }
 </static-query>
+
+<script>
+export default {
+  metaInfo() {
+    return {
+      link: [
+        {
+          key: `canonical`,
+          rel: `canonical`,
+          href: this.$static.metadata.siteUrl
+        },
+      ],
+      meta: [
+        { key: `og:locale`, property: `og:locale`, content: `ja_JP` },
+        { key: `og:type`, property: `og:type`, content: `website` },
+        {
+          key: `og:url`,
+          property: `og:url`,
+          content: this.$static.metadata.siteUrl,
+        },
+        {
+          key: `og:site_name`,
+          property: `og:site_name`,
+          content: this.$static.metadata.siteName,
+        },
+        {
+          key: `og:image`,
+          property: `og:image`,
+          content:  this.$static.metadata.siteOgImage,
+        },
+      ]
+    }
+  }
+}
+</script>
 
 <style>
 body {
