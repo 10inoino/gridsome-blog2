@@ -129,4 +129,16 @@ article {
 .article-body >>> iframe {
   margin: 0 0 1em 0
 }
+
+.article-body >>> li {
+  margin: 0 0 1em 0
+}
+
+.article-body >>> ul {
+  margin: 0 0 1em 0
+}
+
+.article-body >>> ul>li {
+  margin: 0 0 0.5em 0
+}
 </style>
