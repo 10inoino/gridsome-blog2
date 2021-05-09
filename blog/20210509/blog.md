@@ -11,7 +11,7 @@ blog_id: 3
 
 ![アーキテクチャ](./architecture.PNG)
 
-Androidのスマホや、WindowsのPCなどではAPIを叩けるんですが、iPhoneやMacbookなどではAPIKickに失敗するという減少が起きました。
+Androidのスマホや、WindowsのPCなどではAPIを叩けるんですが、iPhoneやMacbookなどではAPIKickに失敗するという事象が起きました。
 
 # 何が起きているのか
 
