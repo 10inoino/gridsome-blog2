@@ -110,6 +110,7 @@ Netlify FunctionsはFaaS(Function as a Service)で、AWSをよく使う方はLam
 NetlifyのアカウントにGithubが紐付いている方であればすぐに利用できるかと思います。
 
 要は構成をこういう感じに変更することにしました。
+
 ![アーキテクチャ](./architecture2.PNG)
 
 で、実際に書いたコードがこちら(一部修正してます)

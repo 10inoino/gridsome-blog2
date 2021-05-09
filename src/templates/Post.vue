@@ -89,7 +89,7 @@ export default {
 }
 
 article {
-  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 .article-date {
