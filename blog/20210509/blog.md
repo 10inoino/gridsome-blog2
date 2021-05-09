@@ -36,7 +36,7 @@ xmlhttprequest cannot load ~~~ due to access control checks
   src="https://hatenablog-parts.com/embed?url=https://qiita.com/Kazuki-Komori/items/9441fe22181bd89a29df"
   width="300" height="150" frameborder="0" scrolling="no">
 </iframe>
-
+<br/>
 <iframe 
   class="hatenablogcard" 
   style="width:100%;height:155px;max-width:680px;"
@@ -69,7 +69,7 @@ Preflight response is not successfull.
   src="https://hatenablog-parts.com/embed?url=https://tech.actindi.net/2019/11/12/100202"
   width="300" height="150" frameborder="0" scrolling="no">
 </iframe>
-
+<br/>
 <iframe 
   class="hatenablogcard" 
   style="width:100%;height:155px;max-width:680px;"
@@ -161,7 +161,7 @@ Netlify Functionsを叩いたパラメータをそのままURLに渡せばいけ
 
 でもGASとは違ってレスポンスヘッダを設定できるので楽ですね。
 上記コードの11,12行目ですね。
-<br><br><br><br>
+<br><br><br>
 これでGASを直接叩いていた箇所を、Netlify Functionsに向き先変更してやってみたところKick成功！
 長い戦いであった…
 
