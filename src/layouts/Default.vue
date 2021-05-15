@@ -80,7 +80,7 @@ export default {
         {
           key: `og:title`,
           property: `og:title`,
-          content: `${this.$page.post.title} | ${this.$page.metadata.siteName}`,
+          content: `Articles | ${this.$static.metadata.siteName}`,
         }
       ]
     }
