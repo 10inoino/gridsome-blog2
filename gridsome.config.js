@@ -1,10 +1,10 @@
 module.exports = {
   siteName: "MattyLogs",
   titleTemplate: `%s | MattyLogs`,
-  siteUrl: `https://mattylogs.com/`,
+  siteUrl: `https://mattylogs.com`,
   siteDescription: `MattyがLogを書き残す場所`,
   metadata: {
-    siteOgImage: `nigaoe.png`,
+    siteOgImage: `./src/assets/images/nigaoe.png`,
   },
   plugins: [
     {

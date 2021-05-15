@@ -68,11 +68,6 @@ export default {
           content: this.$static.metadata.siteUrl,
         },
         {
-          key: `og:title`,
-          property: `og:title`,
-          content: `Articles | ${this.$page.metadata.siteName}`,
-        },
-        {
           key: `og:description`,
           property: `og:description`,
           content: this.$static.metadata.siteDescription,

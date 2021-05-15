@@ -42,7 +42,6 @@ export default {
         },
       ],
       meta: [
-        { key: `og:locale`, property: `og:locale`, content: `ja_JP` },
         { key: `og:type`, property: `og:type`, content: `article` },
         {
           key: `og:url`,
@@ -53,12 +52,7 @@ export default {
           key: `og:title`,
           property: `og:title`,
           content: `${this.$page.post.title} | ${this.$page.metadata.siteName}`,
-        },
-        {
-          key: `og:site_name`,
-          property: `og:site_name`,
-          content: `${this.$page.post.title} | ${this.$page.metadata.siteName}`,
-        },
+        }
       ]
     }
   }
