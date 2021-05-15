@@ -43,11 +43,6 @@ export default {
           content: `Home | ${this.$static.metadata.siteName}`,
         },
         {
-          key: `og:site_name`,
-          property: `og:site_name`,
-          content: `${this.$static.metadata.siteName}`
-        },
-        {
           key: `og:description`,
           property: `og:description`,
           content: this.$static.metadata.siteDescription,

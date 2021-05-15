@@ -48,6 +48,37 @@ query {
 }
 </static-query>
 
+<script>
+export default {
+  metaInfo() {
+    return {
+      link: [
+        {
+          key: `canonical`,
+          rel: `canonical`,
+          href: this.$static.metadata.siteUrl
+        },
+      ],
+      meta: [
+        { key: `og:locale`, property: `og:locale`, content: `ja_JP` },
+        { key: `og:type`, property: `og:type`, content: `website` },
+        {
+          key: `og:url`,
+          property: `og:url`,
+          content: this.$static.metadata.siteUrl,
+        },
+        {
+          key: `og:description`,
+          property: `og:description`,
+          content: this.$static.metadata.siteDescription,
+        }
+      ]
+    }
+  }
+}
+</script>
+
+
 <style>
 body {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
