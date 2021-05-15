@@ -77,6 +77,11 @@ export default {
           property: `og:image`,
           content:  this.$static.metadata.siteOgImage,
         },
+        {
+          key: `og:title`,
+          property: `og:title`,
+          content: `${this.$page.post.title} | ${this.$page.metadata.siteName}`,
+        }
       ]
     }
   }
