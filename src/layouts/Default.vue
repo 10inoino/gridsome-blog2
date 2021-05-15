@@ -37,41 +37,6 @@
   </div>
 </template>
 
-<static-query>
-query {
-  metadata {
-    siteName
-    siteDescription
-    siteUrl
-    siteOgImage
-  }
-}
-</static-query>
-
-<script>
-export default {
-  metaInfo() {
-    return {
-      link: [
-        {
-          key: `canonical`,
-          rel: `canonical`,
-          href: this.$static.metadata.siteUrl
-        },
-      ],
-      meta: [
-        {
-          key: `og:url`,
-          property: `og:url`,
-          content: this.$static.metadata.siteUrl,
-        }
-      ]
-    }
-  }
-}
-</script>
-
-
 <style>
 body {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
