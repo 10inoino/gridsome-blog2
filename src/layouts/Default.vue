@@ -80,12 +80,12 @@ export default {
         {
           key: `og:title`,
           property: `og:title`,
-          content: `Articles | ${this.$static.metadata.siteName}`,
+          content: `Home | ${this.$static.metadata.siteName}`,
         },
         {
           key: `og:site_name`,
           property: `og:site_name`,
-          content: `Articles | ${this.$static.metadata.siteName}`
+          content: `${this.$static.metadata.siteName}`
         },
         {
           key: `og:description`,
