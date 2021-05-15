@@ -38,11 +38,6 @@ export default {
           content: this.$static.metadata.siteName,
         },
         {
-          key: `og:image`,
-          property: `og:image`,
-          content:  this.$static.metadata.siteOgImage,
-        },
-        {
           key: `og:title`,
           property: `og:title`,
           content: `Home | ${this.$static.metadata.siteName}`,
