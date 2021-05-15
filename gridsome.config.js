@@ -4,7 +4,7 @@ module.exports = {
   siteUrl: `https://mattylogs.com/`,
   siteDescription: `MattyがLogを書き残す場所`,
   metadata: {
-    siteOgImage: `~/src/assets/images/nigaoe.png`,
+    siteOgImage: `nigaoe.png`,
   },
   plugins: [
     {
