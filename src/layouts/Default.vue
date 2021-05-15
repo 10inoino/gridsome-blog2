@@ -60,17 +60,10 @@ export default {
         },
       ],
       meta: [
-        { key: `og:locale`, property: `og:locale`, content: `ja_JP` },
-        { key: `og:type`, property: `og:type`, content: `website` },
         {
           key: `og:url`,
           property: `og:url`,
           content: this.$static.metadata.siteUrl,
-        },
-        {
-          key: `og:description`,
-          property: `og:description`,
-          content: this.$static.metadata.siteDescription,
         }
       ]
     }
