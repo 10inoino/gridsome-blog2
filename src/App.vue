@@ -26,7 +26,7 @@ export default {
       ],
       meta: [
         { key: `og:locale`, property: `og:locale`, content: `ja_JP` },
-        { key: `og:type`, property: `og:type`, content: `website` },
+        { key: `og:type`, property: `og:type`, content: `article` },
         {
           key: `og:url`,
           property: `og:url`,
