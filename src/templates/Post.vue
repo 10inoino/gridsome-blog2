@@ -33,7 +33,7 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.$page.post.title,
+      title: `${this.$page.post.title} |`,
       link: [
         {
           key: `canonical`,

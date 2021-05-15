@@ -1,6 +1,6 @@
 module.exports = {
   siteName: "MattyLogs",
-  titleTemplate: `%s | MattyLogs`,
+  titleTemplate: `%s MattyLogs`,
   siteUrl: `https://mattylogs.com`,
   siteDescription: `MattyがLogを書き残す場所`,
   metadata: {

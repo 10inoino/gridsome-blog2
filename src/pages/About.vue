@@ -27,7 +27,7 @@ query {
 export default {
   metaInfo() {
     return {
-      title: 'About Me',
+      title: 'About Me |',
       link: [
         {
           key: `canonical`,
