@@ -53,6 +53,11 @@ export default {
           property: `og:title`,
           content: `${this.$page.post.title} | ${this.$page.metadata.siteName}`,
         },
+        {
+          key: `og:site_name`,
+          property: `og:site_name`,
+          content: `${this.$page.post.title} | ${this.$page.metadata.siteName}`,
+        },
       ]
     }
   }
