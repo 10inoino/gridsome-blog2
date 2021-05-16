@@ -104,7 +104,7 @@ article {
   background: #f4f4f4;/*背景色*/
   border-left: solid 5px #7db4e6;/*左線*/
   border-bottom: solid 3px #d7d7d7;/*下線*/
-  margin: 0.7em 0;
+  margin: 1.5em 0 0.7em;
   font-weight: bold;
 }
 
@@ -114,7 +114,7 @@ article {
   color: #494949;/*文字色*/
   background: transparent;/*背景透明に*/
   border-left: solid 5px #3498db;/*左線*/
-  margin: 0.7em 0;
+  margin: 1.5em 0 0.7em;
   font-weight: bold;
 }
 
@@ -123,7 +123,10 @@ article {
 }
 
 .article-body >>> img {
-  max-width: 100%;
+  width:auto;
+  height:auto;
+  max-width: 80%;
+  max-height: 60vh;
 }
 
 .article-body >>> iframe {
