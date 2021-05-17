@@ -127,7 +127,7 @@ article {
   height:auto;
   max-width: 80%;
   max-height: 60vh;
-  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+  border: 2px #d3d3d3 solid;
   margin: 1.5em 0 1.5em;
 }
 
