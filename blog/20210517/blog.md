@@ -6,7 +6,7 @@ id: 5
 blog_id: 5
 ---
 
-先日、5月12日にCivicTechForum2021が開催されまして、ルーキー枠で登壇させていただきました。
+先日、5月15日にCivicTechForum2021が開催されまして、ルーキー枠で登壇させていただきました。
 
 <iframe 
   class="hatenablogcard" 
