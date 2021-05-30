@@ -78,7 +78,7 @@ gitをステージングしたときのWarningメッセージを全部持って�
 warning: LF will be replaced by CRLF in ~~~
 ```
 
-これの前半部分を、nkfの改行文字変換のコマンド置換するだけ
+これの前半部分を、nkfの改行文字変換のコマンドに置換するだけ
 
 ```
 nkf32 -Lw --overwrite hogehoge.php
