@@ -155,4 +155,8 @@ article {
   font-size: 1.2em;
   margin: 0 0.2em 0 0.2em
 }
+
+.article-body >>> ul>li>p {
+  margin: 0 0 0.5em 0
+}
 </style>
