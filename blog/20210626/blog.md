@@ -27,7 +27,7 @@ blog_id: 9
 
 <br>
 gRPCのサーバーとクライアントの関係が 以下のページに図で説明されております。
-
+<br>
 <iframe 
   class="hatenablogcard" 
   style="width:100%;height:155px;max-width:680px;"
@@ -60,7 +60,7 @@ Rubyクライアントからでも、Android-Javaクライアントからでも�
 - IDL (RPCの関数やその引数を定義する言語) としては Protocol Buffers (スキーマ言語の一種) が使われている。
   - 普通のRPCであれば、Java IDLとかでも書けるっぽい。
 - 通信には HTTP/2 (HTTP/1.1から複数リクエストを同時に処理できるようになったプロトコル)の枠組みが利用されている。
-<br>
+
 <br>
 よしよし、だいぶ分かってきた。  
 ここからちょっと気になったことを調べます。
