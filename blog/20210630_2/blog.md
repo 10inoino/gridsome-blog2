@@ -112,6 +112,9 @@ module.exports = { handler }
 6. middleware2(after)
 7. middleware1(after)
 
+公式ドキュメントでは「玉ねぎのようなミドルウェアパターン」と言われてます。  
+![middy_onion](./middy_onion.PNG)
+
 # ミドルウェアの実装
 
 middyが用意しているミドルウェア（[こちら](https://middy.js.org/) のAvailable middlewares参照）はあるが、ミドルウェアを自分で実装することも可能
