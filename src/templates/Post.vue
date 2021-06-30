@@ -104,7 +104,7 @@ article {
   background: #f4f4f4;/*背景色*/
   border-left: solid 5px #7db4e6;/*左線*/
   border-bottom: solid 3px #d7d7d7;/*下線*/
-  margin: 1.5em 0 0.7em;
+  margin: 1.0em 0 0.7em;
   font-weight: bold;
 }
 
@@ -114,7 +114,7 @@ article {
   color: #494949;/*文字色*/
   background: transparent;/*背景透明に*/
   border-left: solid 5px #3498db;/*左線*/
-  margin: 1.5em 0 0.7em;
+  margin: 1.0em 0 0.7em;
   font-weight: bold;
 }
 
@@ -140,10 +140,18 @@ article {
 }
 
 .article-body >>> ul {
-  margin: 0 0 1em 0
+  margin: 0 0 0.5em 0
 }
 
 .article-body >>> ul>li {
+  margin: 0 0 0.5em 0
+}
+
+.article-body >>> ol {
+  margin: 0 0 0.5em 0
+}
+
+.article-body >>> ol>li {
   margin: 0 0 0.5em 0
 }
 
