@@ -16,7 +16,7 @@ WITH サブクエリ名 AS
 ## 集約関数のarray_aggとarray_to_stringで、1対nがいい感じに取得できたりするよ
 - 1対nのレコードをSQLで取得する時に、nの方をカンマ区切りで取得できたりする
 - 例えば一人の店員が複数の店舗に所属してるような場合
-```SQL
+```sql
 SELECT
   employee_name,
   array_to_string(array_agg(store_name), ",")
