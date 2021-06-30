@@ -128,7 +128,7 @@ article {
   max-width: 80%;
   max-height: 60vh;
   border: 2px #d3d3d3 solid;
-  margin: 1.5em 0 1.5em;
+  margin: 1.0em 0 1.0em;
 }
 
 .article-body >>> iframe {
@@ -158,5 +158,13 @@ article {
 
 .article-body >>> ul>li>p {
   margin: 0 0 0.5em 0
+}
+
+.article-body >>> p {
+  margin: 0 0 0.5em 0
+}
+
+.article-body >>> pre {
+  margin: 0 0 1.0em 0
 }
 </style>
