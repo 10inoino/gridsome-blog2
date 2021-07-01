@@ -2,8 +2,8 @@
 title: "20210701 DailyLog"
 description: "20210701 DailyLog"
 date: 2021-07-01
-id: 14
-blog_id: 14
+id: 15
+blog_id: 15
 ---
 
 # 記事
