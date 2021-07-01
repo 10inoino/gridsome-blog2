@@ -155,10 +155,6 @@ article {
   margin: 0 0 0.5em 0
 }
 
-.article-body >>> p {
-  margin: 0 0 1.7em 0
-}
-
 .article-body >>> p>strong {
   font-size: 1.2em;
   margin: 0 0.2em 0 0.2em
@@ -169,7 +165,7 @@ article {
 }
 
 .article-body >>> p {
-  margin: 0 0 0.5em 0
+  margin: 0 0 0.8em 0
 }
 
 .article-body >>> pre {
