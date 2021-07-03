@@ -1,6 +1,6 @@
 ---
 title: "20210702 DailyLog"
-description: "20210701 DailyLog"
+description: "20210702 DailyLog"
 date: 2021-07-03
 id: 17
 blog_id: 17
