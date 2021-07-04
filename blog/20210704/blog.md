@@ -62,4 +62,13 @@ blog_id: 19
 初めて人のリポジトリに対してIssue飛ばしたんですが、相手も喜んでくれたし、ホントOSS的なマインドって素晴らしいなぁと、改めて思いました。  
 いやぁ、本当に今日は満足度が高い。
 
+今度はNest.js×Serverless FrameworkでAPI作ってみます。
+
+<iframe 
+  class="hatenablogcard" 
+  style="width:100%;height:155px;max-width:680px;"
+  src="https://hatenablog-parts.com/embed?url=https://note.com/dafujii/n/n83e76bc7e008" 
+  width="300" height="150" frameborder="0" scrolling="no">
+</iframe>
+
 さて、英単語ちょっとやって、寝ますかね。
