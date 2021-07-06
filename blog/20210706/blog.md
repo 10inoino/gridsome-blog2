@@ -39,3 +39,66 @@ ORDER BY
 ```
 
 where条件でpostgresqlから提供されるテーブルは抜くようにしてます（多分routinesとかは残ってる）
+
+# nestjsについて
+
+<iframe 
+  class="hatenablogcard" 
+  style="width:100%;height:155px;max-width:680px;"
+  src="https://hatenablog-parts.com/embed?url=https://note.com/dafujii/n/n83e76bc7e008" 
+  width="300" height="150" frameborder="0" scrolling="no">
+</iframe>
+
+これを参考にNestjs × Serverless FrameworkでAPIを作ろうしています。  
+実は前回のMiddyの記事は、私がテキトーに参照した記事の通りにnpmコマンドを叩いてたら、いつの間にかmiddyがインストールされており、調べてみたという背景があります。
+
+<iframe 
+  class="hatenablogcard" 
+  style="width:100%;height:155px;max-width:680px;"
+  src="https://hatenablog-parts.com/embed?url=https://mattylogs.com/blog/14/" 
+  width="300" height="150" frameborder="0" scrolling="no">
+</iframe>
+
+なので今回は何がインストールされていくのかを逐一調べながらやってみようと思います。
+
+まずは気になったのはこれ
+
+```
+npm i -D @types/aws-serverless-express serverless-layers
+```
+
+## serverless-layersとはなにか
+
+参考にしたのはこちら
+
+<iframe 
+  class="hatenablogcard" 
+  style="width:100%;height:155px;max-width:680px;"
+  src="https://hatenablog-parts.com/embed?url=https://dev.classmethod.jp/articles/serverless-framework-node-modules-to-lambda-layers/" 
+  width="300" height="150" frameborder="0" scrolling="no">
+</iframe>
+
+Lambdaをnodeで開発する際に、node_modulesをなんとか扱う必要があるんですが、それの方法の一つとしてLambda Layerがあるらしい。
+
+<iframe 
+  class="hatenablogcard" 
+  style="width:100%;height:155px;max-width:680px;"
+  src="https://hatenablog-parts.com/embed?url=https://docs.aws.amazon.com/ja_jp/lambda/latest/dg/configuration-layers.html" 
+  width="300" height="150" frameborder="0" scrolling="no">
+</iframe>
+
+> レイヤーを使用すると、コードの共有と責任の分離を促進し、ビジネスロジックの記述をより迅速に繰り返すことができます。
+
+上記のlambda layerをserverless-layerにより、簡単にデプロイできるようになるみたいですね。
+<br>
+<br>
+<br>
+<br>
+あとは、serverless-offlineをちょっと調べてみて、serverless-layerと干渉したりしないのかを見ながら、慎重に入れてみようかなと思います。
+
+<iframe 
+  class="hatenablogcard" 
+  style="width:100%;height:155px;max-width:680px;"
+  src="https://hatenablog-parts.com/embed?url=https://note.com/dafujii/n/naf05740a253b" 
+  width="300" height="150" frameborder="0" scrolling="no">
+</iframe>

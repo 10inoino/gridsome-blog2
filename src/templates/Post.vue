@@ -171,4 +171,39 @@ article {
 .article-body >>> pre {
   margin: 0 0 1.0em 0
 }
+
+.article-body >>> blockquote {
+  position: relative;
+  padding: 30px 15px 8px 15px;
+  box-sizing: border-box;
+  font-style: italic;
+  background: #efefef;
+  color: #555;
+}
+
+.article-body >>> blockquote:before{
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  content: "“";
+  font-family: Arial;
+  font-weight: bold;
+  color: #cfcfcf;
+  font-size: 90px;
+  line-height: 1;
+}
+
+.article-body >>> blockquote p {
+  padding: 0;
+  margin: 20px 0 10px;
+  line-height: 1.7;
+}
+
+.article-body >>> blockquote cite {
+  display: block;
+  text-align: right;
+  color: #888888;
+  font-size: 0.9em;
+}
 </style>
