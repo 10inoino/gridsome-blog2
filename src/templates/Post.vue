@@ -172,7 +172,7 @@ article {
   margin: 0 0 1.0em 0
 }
 
-.article-body >>> blockquote {
+.article-body >>> blockquote:not(.twitter-tweet) {
   position: relative;
   padding: 30px 15px 8px 15px;
   box-sizing: border-box;
@@ -181,7 +181,7 @@ article {
   color: #555;
 }
 
-.article-body >>> blockquote:before{
+.article-body >>> blockquote:not(.twitter-tweet):before{
   display: inline-block;
   position: absolute;
   top: 5px;
@@ -194,16 +194,50 @@ article {
   line-height: 1;
 }
 
-.article-body >>> blockquote p {
+.article-body >>> blockquote:not(.twitter-tweet) p {
   padding: 0;
   margin: 20px 0 10px;
   line-height: 1.7;
 }
 
-.article-body >>> blockquote cite {
+.article-body >>> blockquote:not(.twitter-tweet) cite {
   display: block;
   text-align: right;
   color: #888888;
   font-size: 0.9em;
+}
+
+.article-body >>> blockquote.twitter-tweet {
+  display: inline-block;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+  border-color: #eee #ddd #bbb;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  margin: 10px 5px;
+  padding: 0 16px 16px 16px;
+  max-width: 468px;
+}
+
+.article-body >>> blockquote.twitter-tweet p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+.article-body >>> blockquote.twitter-tweet a {
+  color: inherit;
+  font-weight: normal;
+  text-decoration: none;
+  outline: 0 none;
+}
+
+.article-body >>> blockquote.twitter-tweet a:hover,
+.article-body >>> blockquote.twitter-tweet a:focus {
+  text-decoration: underline;
 }
 </style>
