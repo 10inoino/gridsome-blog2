@@ -49,7 +49,9 @@
             v-for="month in getUniqueMonths($static.archive.edges)"
             :key="month.value"
           >
+          <g-link :to="`/archives/${month.value}/`">
             <li>{{ month.value }} ({{ month.count }})</li>
+          </g-link>
           </b-col>
         </b-col>
       </b-row>

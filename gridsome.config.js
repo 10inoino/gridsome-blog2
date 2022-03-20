@@ -31,7 +31,11 @@ module.exports = {
     }
   ],
   templates: {
-    Post: '/blog/:id',
+    Post: [
+      {
+        path: '/blog/:id',
+      },
+    ]
   },
   icon: {
     favicon: "./src/assets/images/nigaoe.png",
