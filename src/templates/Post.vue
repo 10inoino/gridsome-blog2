@@ -1,8 +1,8 @@
 <template>
   <Layout>
     <div class='my-4'>
-      <h1 id="MAIN_START">{{ $page.post.title }}</h1>
-      <div class="mb-3 article-date"><b-icon-calendar class="mr-2"></b-icon-calendar>{{reduceDate($page.post.date)}}</div>
+      <h1 id="title">{{ $page.post.title }}</h1>
+      <div class="mb-3 article-date"><b-icon-calendar class="mr-2"></b-icon-calendar>{{$page.post.date}}</div>
       <article class="article-body" v-html="$page.post.content" />
       <g-link id='back2home' to="/"><b-icon-chevron-double-left/>home</g-link>
     </div>
@@ -15,7 +15,7 @@ query blogPost($id: ID!){
     id
     title
     content
-    date
+    date(format: "YYYY/MM/DD")
   }
   metadata {
     siteName
@@ -26,11 +26,6 @@ query blogPost($id: ID!){
 
 <script>
 export default {
-  methods: {
-    reduceDate(date) {
-      return date.substr(0, 10);
-    },
-  },
   metaInfo() {
     return {
       title: `${this.$page.post.title} |`,
@@ -72,12 +67,12 @@ export default {
   text-decoration: underline;
 }
 
-#MAIN_START {
+#title {
   position: relative;
   border-bottom: 10px solid #ccc;
   font-size: 2rem;
 }
-#MAIN_START::after {
+#title::after {
   position: absolute;
   bottom: -10px;
   left: 0;

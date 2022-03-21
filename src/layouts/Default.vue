@@ -45,14 +45,17 @@
               ></a>
             </div>
           </b-card>
-          <b-col
-            v-for="month in getUniqueMonths($static.archive.edges)"
-            :key="month.value"
-          >
-          <g-link :to="`/archives/${month.value}/`">
-            <li>{{ month.value }} ({{ month.count }})</li>
-          </g-link>
-          </b-col>
+          <div class="my-4">
+            <h4 class="sidebar-menu-title">Archives</h4>
+            <b-col
+              v-for="month in getUniqueMonths($static.archive.edges)"
+              :key="month.value"
+            >
+              <g-link :to="`/archives/${month.value}/`">
+                <li>{{ month.value }} ({{ month.count }})</li>
+              </g-link>
+            </b-col>    
+          </div>
         </b-col>
       </b-row>
     </b-container>
@@ -125,5 +128,10 @@ div.sns-icons {
   font-family: "Lato", "Noto Sans JP", "ヒラギノ角ゴ ProN",
     "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック",
     "MS PGothic", sans-serif;
+}
+
+.sidebar-menu-title {
+  padding: 0rem 1rem;
+  border-left: 3px solid #3498db;
 }
 </style>

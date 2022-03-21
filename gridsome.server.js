@@ -40,8 +40,7 @@ module.exports = function (api) {
         component: "./src/templates/Archives.vue",
         context: {
           displayYear: year,
-          periodStartDate: `${year}-01-01T00:00:00.000Z`,
-          periodEndDate: `${year}-12-31T23:59:59.999Z`
+          dateRegex: `${year}`
         }
       });
     });
@@ -59,8 +58,7 @@ module.exports = function (api) {
         component: "./src/templates/Archives.vue",
         context: {
           displayYear: `${yearMonth[0]}/${yearMonth[1]}`,
-          periodStartDate: `${year}-${month}-01T00:00:00.000Z`,
-          periodEndDate: `${year}-${month}-${day}T23:59:59.999Z`
+          dateRegex: `${year}\/${month}`
         }
       });
     });

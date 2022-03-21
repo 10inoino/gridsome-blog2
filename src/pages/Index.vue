@@ -1,10 +1,17 @@
 <template>
   <Layout>
     <b-row id="article-list">
-      <b-col cols="12" class="p-3 article" v-for="edge in $page.posts.edges" :key="edge.node.id">
-        <router-link :to="{ path: edge.node.path}" append>
-          <div><b-icon-calendar class="mr-2"></b-icon-calendar>{{reduceDate(edge.node.date)}}</div>
-          <h3 class="mb-2 title">{{edge.node.title}}</h3>
+      <b-col
+        cols="12"
+        class="p-3 article"
+        v-for="edge in $page.posts.edges"
+        :key="edge.node.id"
+      >
+        <router-link :to="{ path: edge.node.path }" append>
+          <div>
+            <b-icon-calendar class="mr-2"></b-icon-calendar>{{ edge.node.date }}
+          </div>
+          <h3 class="mb-2 title">{{ edge.node.title }}</h3>
           <div>
             <article v-html="edge.node.excerpt" />
           </div>
@@ -13,16 +20,6 @@
     </b-row>
   </Layout>
 </template>
-
-<script>
-export default {
-  methods: {
-    reduceDate(date) {
-      return date.substr(0, 10);
-    },
-  }
-}
-</script>
 
 <page-query>
 query {
@@ -33,7 +30,7 @@ query {
         title
         path
         excerpt
-        date
+        date(format: "YYYY/MM/DD")
       }
     }
   }
@@ -42,11 +39,11 @@ query {
 
 <style scoped>
 .article {
-  border-bottom: medium solid #d3d3d3
+  border-bottom: medium solid #d3d3d3;
 }
 
 .article:last-child {
-  border-bottom: none
+  border-bottom: none;
 }
 
 h4.title {
@@ -59,6 +56,6 @@ article {
 }
 
 * {
-  color:black
+  color: black;
 }
 </style>
