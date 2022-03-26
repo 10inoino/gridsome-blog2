@@ -1,18 +1,35 @@
 ---
-title: "達人プログラマーを読み始めた"
-description: "達人プログラマーを読み始めた"
-date: 2022-03-23
-id: 49
-blog_id: 49
+title: "devcontainerでsqlite3が動かない時"
+description: "devcontainerでsqlite3が動かない時"
+date: 2022-03-25
+id: 50
+blog_id: 50
 ---
 
-「だから僕たちは組織を変えていける」を読み終えたので、次は達人プログラマーを読み始めた。
+自分用のメモ程度に書く。
 
-冒頭から面白い主張があって、なかなかいい。  
-例えば以下のようなもの。
+現在、typescript, nestjsあたりでアプリケーションを作ろうとしており、モックアップとしてsqlite3を導入しようとしていた。  
+環境構築はdevcontainerで行っている。
 
-- 常人と達人の違いは、問題に対するアプローチと、解決手段についての考え方、スタイル、哲学
-- ソフトウェアは、エントロピー増大の法則に縛られている
-- 今日の素晴らしいソフトウェアは、明日の完璧なソフトウェアより好まれる
+参考にしている記事が以下
 
-文章1つ1つが本質を捉えていながら、キャッチーで、周囲に訴求したくなるようなものなので、ぜひこれは周りのエンジニアと一緒に読みたい本だなと思った。
+<iframe 
+  class="hatenablogcard" 
+  style="width:100%;height:155px;max-width:680px;"
+  src="https://hatenablog-parts.com/embed?url=https://taroosg.io/nestjs-tutorial" 
+  width="300" height="150" frameborder="0" scrolling="no">
+</iframe>
+
+ここの途中で、sqlite3コマンドを実行して、DBの中身を確認する手順があるが、そこが「sqlite3 command not found」と表示されてうまく動かなかった。
+
+色々調べた結果、Dockerfileを以下のように修正したらコマンドが通った
+
+```Dockerfile
+ARG VARIANT="16-bullseye"
+FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:0-${VARIANT}
+
+RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+    && apt-get -y install --no-install-recommends sqlite3
+```
+
+4行目、5行目の意味がいまいちわかっていないところもあるので、要調査ではあるが、一件落着。
