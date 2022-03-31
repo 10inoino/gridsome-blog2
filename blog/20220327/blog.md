@@ -1,6 +1,6 @@
 ---
-title: "nesjs × serverless frameworkでlambdaにデプロイ"
-description: "nesjs × serverless frameworkでlambdaにデプロイ"
+title: "nestjs × serverless frameworkでlambdaにデプロイ"
+description: "nestjs × serverless frameworkでlambdaにデプロイ"
 date: 2022-03-27
 id: 52
 blog_id: 52
