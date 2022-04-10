@@ -46,6 +46,13 @@ blog_id: 58
 
 GMOの小川さんの発表。
 
+<iframe 
+  class="hatenablogcard" 
+  style="width:100%;height:155px;max-width:680px;"
+  src="https://hatenablog-parts.com/embed?url=https://fortee.jp/phperkaigi-2022/proposal/4d900430-a0c4-4ad8-95bb-41b240951255" 
+  width="300" height="150" frameborder="0" scrolling="no">
+</iframe>
+
 GMOでGithubActionsを使っているのと、小川さん自身がオープンソースでカバレッジ測定ツールを作成しているということで、CICDやワークフロー構築に関してとてもわかり易くまとまっていた。
 
 主には公式ドキュメントを噛み砕きながらの説明だったが、PHPerKaigiということで、PHPのコードの実行なども行っていて、GithubActionsの入門にはもってこいの内容だったのではなかろうか。
